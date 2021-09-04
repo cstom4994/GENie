@@ -344,6 +344,9 @@
 		if cfg.flags.CppLatest then
 			_p(3, '<LanguageStandard>stdcpplatest</LanguageStandard>')
 			_p(3, '<EnableModules>true</EnableModules>')
+		elseif cfg.flags.Cpp20 then
+			_p(3, '<LanguageStandard>stdcpp20</LanguageStandard>')
+			_p(3, '<EnableModules>true</EnableModules>')
 		elseif cfg.flags.Cpp17 then
 			_p(3, '<LanguageStandard>stdcpp17</LanguageStandard>')
 		elseif cfg.flags.Cpp14 then
